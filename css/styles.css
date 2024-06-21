@@ -73,6 +73,21 @@ header .header-links ul>li a:hover{
 header .header-links ul>li a:active{
   color: var(--cerulean);
 }
+.header-links .toggle-menu{
+  float: right;
+  display: none;
+}
+.header-links .toggle-menu i.fas.fa-times{
+  display: none;
+  bottom: 34px;
+}
+.header-links .toggle-menu i.fas.fa-times,
+.header-links .toggle-menu i.fas.fa-bars{
+  position: relative;
+  margin: 7px 50px;
+  font-size: 28px;
+  color: var(--fountain-blue);
+}
 section.banner-home{
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -91,7 +106,7 @@ section.banner-home .texto-banner{
   align-items: center;
   right: 0;
   /* bottom: 435px; */
-  top: 205px;
+  top: 20%;
   margin-right: 100px;
 }
 section.banner-home .texto-banner .texto-interno{
@@ -247,7 +262,7 @@ section.certificado{
   background-color: var(--black-squeeze);
 }
 section.certificado .certificado-container ul{
-    padding-left: 15%;
+  padding-left: 15%;
 }
 section.certificado .certificado-container{
   max-width: 960px;
@@ -348,18 +363,24 @@ footer {
     max-width: 100%;
     padding: 0 20px;
   }
+  .section.negocio .negocio-container{
+    display: flex;
+
+  }
 }
 
 @media (max-width: 960px) {
   header .header-links ul>li {
-    width: auto;
+    width: 100%;
     margin: 0 10px;
+    text-align: center;
   }
 
   section.banner-home .texto-banner {
-    
-    top: 150px;
+    display: none;
+    top: 30%;
   }
+
   section.banner-home .texto-banner .texto-interno strong{
     font-size: 30px;
   }
@@ -385,8 +406,8 @@ footer {
   .estrutura-texto p {
     margin-bottom: 30px;
   }
-.footer-container{
-  font-size: 12px;
+  .footer-container{
+    font-size: 12px;
     display: flex;
     align-items: center;
     max-width: 960px;
@@ -394,7 +415,7 @@ footer {
     align-content: space-around;
     flex-direction: column;
     justify-content: center;
-}
+  }
   .footer-section {
     flex: 1 1 100%;
     text-align: center;
@@ -418,6 +439,10 @@ footer {
   header .header-links ul {
     flex-direction: column;
     align-items: center;
+    display: none;
+  }
+  .header-links .toggle-menu{
+    display: block;
   }
 
   section.banner-home .texto-banner {
