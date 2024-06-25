@@ -378,6 +378,16 @@ footer {
   background-color: var(--fountain-blue);
   color: var(--madison);
 }
+.modal-formulario select,
+.modal-formulario input{
+  font-size: 12px;
+    font-family: 'Roboto';
+    letter-spacing: 1.5px;
+}
+.modal-formulario select:after{
+font-family: "Font Awesome 6 Free";
+    content: "\f095";
+}
 @media (max-width: 1200px) {
   .header-container, .negocio-container, .estrutura-container, .certificado-container, .footer-container {
     max-width: 100%;

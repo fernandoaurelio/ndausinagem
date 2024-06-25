@@ -14,6 +14,10 @@ $(document).ready(function(){
 		$(this).hide();
 		$(".fas.fa-bars").css({"display":"block"});
 	});
+	$(".empresa").on("click", function(){
+		$(".modal-formulario").load("forms/form-orcamento.php");
+		$(".modal-title").html("Orçamento");
+	});
 
 
 });
