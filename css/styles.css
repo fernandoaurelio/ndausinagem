@@ -379,10 +379,15 @@ footer {
   color: var(--madison);
 }
 .modal-formulario select,
+.form-floating,
+.form-floating textarea,
 .modal-formulario input{
   font-size: 12px;
   font-family: 'Roboto';
   letter-spacing: 1.5px;
+}
+.input-vazio{
+  border:1px solid red;
 }
 .input-icone{
   width: 100%;

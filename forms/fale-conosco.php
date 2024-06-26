@@ -1,11 +1,11 @@
 <div class="row g-3">
-  <input type="text" name="email" class="form-control" placeholder="Seu E-mail" aria-label="email">
-  <input type="text" name="nome" class="form-control" placeholder="Seu Nome" aria-label="nome">
+  <input type="email" class="form-control" placeholder="Seu E-mail" aria-label="email">
+  <input type="text" class="form-control" placeholder="Seu Nome" aria-label="nome">
   <div class="col">
-    <input type="text" name="telefone" class="form-control" placeholder="Telefone Comercial" aria-label="telefone">
+    <input type="text" class="form-control" placeholder="Telefone Comercial" aria-label="telefone">
   </div>
   <div class="col">
-    <input type="text" name="empresa" class="form-control" placeholder="Nome da Empresa" aria-label="empresa">
+    <input type="text" class="form-control" placeholder="Nome da Empresa" aria-label="empresa">
   </div>
   <div class="input-icone">
     <i class="fa-solid fa-chevron-down icon"></i>    
@@ -61,4 +61,8 @@
       </select>
     </div>
   </div>
+  <div class="form-floating">
+  <textarea name="mensagem" class="form-control" placeholder="Escreva sua pergunta" id="floatingTextarea2" style="height: 100px"></textarea>
+  <label for="floatingTextarea2">Escreva sua pergunta</label>
+</div>
 </div>
