@@ -1,3 +1,5 @@
+<form action="post" id="formulario">
+  
 <div class="row g-3">
   <input type="text" name="email" class="form-control" placeholder="Seu E-mail" aria-label="email">
   <input type="text" name="nome" class="form-control" placeholder="Seu Nome" aria-label="nome">
@@ -20,6 +22,7 @@
       <option value="mandrilamento">Mandrilamento</option>
       <option value="usinagem-de-precisao">Usinagem de Precisão</option>
     </select>
+    <input type="hidden" name="opcaoservico" value="">
   </div>    
   <div class="col">
     <div class="input-icone">
@@ -47,6 +50,7 @@
         <option value="gerenteProducao">Gerente de Produção</option>
         <option value="assistenteAdministrativo">Assistente Administrativo</option>
       </select>
+      <input type="hidden" name="opcaocargo" value="">
     </div>
   </div>
   <div class="col">
@@ -59,6 +63,8 @@
         <option value="alta">Alta</option>
         <option value="critica">Apenas Pesquisando</option>
       </select>
+      <input type="hidden" name="opcaourgencia" value="">
     </div>
   </div>
 </div>
+</form>

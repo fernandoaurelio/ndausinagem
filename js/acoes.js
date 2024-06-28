@@ -15,7 +15,7 @@ $(document).ready(function(){
 		$(".fas.fa-bars").css({"display":"block"});
 	});
 	$(".orcamento").on("click", function(){
-		$(".modal-formulario").load("forms/form-orcamento.php");
+		//$(".modal-formulario").load("forms/form-orcamento.php");
 		$(".modal-title").html("Orçamento");
 	});
 	$(".fale-conosco").on("click", function(){
@@ -29,10 +29,11 @@ $(document).ready(function(){
 			var nome = $("input[name='nome']").val();
 			var telefone = $("input[name='telefone']").val();
 			var empresa = $("input[name='empresa']").val();
-			var servico = $("input[name='servicos-usinagem']").val();
-			var cargo = $("input[name='cargo']").val();
-			var urgencia = $("input[name='urgencia']").val();
+			var servico = $( "#servicos-usinagem option:selected" ).text();
+			var cargo = $( "#cargo option:selected" ).text();
+			var urgencia = $( "#urgencia option:selected" ).text();
 			var mensagem = $("input[name='mensagem']").val();
+			console.log(nome, email, telefone, empresa,servico, cargo, urgencia,mensagem);
 
 			if(!email){
 				$("input[name='email']").addClass("input-vazio");
@@ -55,12 +56,13 @@ $(document).ready(function(){
 				$.ajax({
 					url:'./mailconfig.php',
 					type: 'POST',
-					data: $('.formulario').serialize(),
+					data: $('#formulario').serialize(),
 					success: function(data){
 						$('.modal-body').html(data);
-						console.log(data);
+						
 					}
 				});
+				
 				return false;
 
 		});
